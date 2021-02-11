@@ -10,7 +10,7 @@ app.use(
 );
 app.options('*', cors());
 
-app.get('/', (req, res) => res.send('This api has been modified.'));
+app.get('/', (req, res) => res.send('This api has been modified twice.'));
 
 app.listen(process.env.PORT || 3000, function() {
     console.log('server running on port 3000', '');
